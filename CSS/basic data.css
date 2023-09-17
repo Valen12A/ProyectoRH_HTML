@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #74B9FF;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top 75px;
+    color: black;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-size: 100% calc(100% - 60px);
+}
+
+.header1 {
+    background-color: #095bc4;
+    position:static;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    margin-left: 0;
+    margin-right: 0px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    border: 4px solid black;
+    max-width: 100%;
+    height: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 65px;
+    height: 65px;
+    max-width: 100%;
+}
+
+.logo-text {
+    font-size: 2rem;
+    width: 20%;
+}
+
+.search {
+    display:flex;
+    align-items:self-start;
+    background-color: white;
+    padding: 5px;
+    border-radius: 3px;
+    border: 2px solid black;
+    margin-right: 10px;
+    margin-left: 50px;
+    width: 45%;
+    max-width: 30%;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+.search-icon {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    max-width: 100%;
+}
+
+.nav-buttons a {
+    color: black;
+    text-decoration: none;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.btn-login{
+    height: 20px;
+    margin-right: 35px;
+    justify-content: space-evenly;
+
+}
+
+.btn-user img{
+    width: 20px;
+    height: 20px;
+    margin-right: 35px;
+    justify-content: space-evenly;
+}
+
+.btn-settings img{
+    width: 20px;
+    height: 20px;
+    margin-right: 35px;
+    justify-content: space-evenly;
+}
+.btn-notify img {
+    width: 20px;
+    height: 20px;
+    margin-right: 35px;
+    justify-content: space-evenly;
+}
+/* FOTO */
+
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 248, 248);
+    margin-left: 20px;
+    margin-top: -195px;
+    border: black solid 3px;
+}
+
+.container input{
+    display: block;
+    width: 100px;
+    padding: .1rem;
+    margin: auto;
+    margin-bottom: 2px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 45px;
+    align-items: center;
+}
+
+.input-1{
+    background: #fff;
+    margin-top: 50px;
+    margin-left: 5px;
+    height: 20px;
+    width: 300px;
+}
+
+.container .input-1{
+    background:#fff;
+    font-family: Georgia;
+}
+
+.imagen img{
+    width: 30px;
+    height: 20px;
+    margin-left: 250px;
+    top: -200px;
+    cursor: pointer;
+}
+
+.imagen2 img{
+    width: 30px;
+    height: 20px;
+    margin-left: 250px;
+    top: -250;
+    cursor: pointer;
+}
+
+.imagen3 img{
+    width: 40px;
+    height: 40px;
+    margin-left: 250px;
+    top: -250;
+    cursor: pointer;
+}
+
+.container-1{
+    margin: 50px;
+    margin-top: 70px;
+}
+
+
+.container-1 input{
+    width: 50px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: 420px;
+    cursor: pointer;
+}
+
+.container-2{
+    margin: 50px;
+    margin-top: -20px;
+}
+
+.container-2 input{
+    width: 50px;
+    height: 20px;
+    margin-top: -5px;
+    margin-left: 420px;
+    cursor: pointer;
+}
+
+
+.container-3{
+    margin-left: 600px;
+    margin-top: -190px;
+}
+
+.container-3 input{
+    width: 50px;
+    height: 20px;
+    margin-top: -5px;
+    margin-left: 230px;
+    cursor: pointer;
+}
+
+.container-4{
+    margin-left: 600px;
+    margin-top: 40px;
+}
+
+.container-5{
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+    border: black solid 2px;
+    text-align: center;
+    background: #fff;
+    margin-left: 1000px;
+    margin-top: -350px;
+}
+
+.container-5 img{
+    width: 50px;
+    margin-left: -250px;
+}
+
+h5{
+    margin-top: -40px;
+}
+
+.p1{
+    margin-top: 30px;
+    text-align: justify;
+}
+
