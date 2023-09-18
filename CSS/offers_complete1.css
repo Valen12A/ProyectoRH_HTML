@@ -14,111 +14,6 @@ body {
     min-height: 100vh;
 }
 
-.header1 {
-    background-color: #095bc4;
-    position:static;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    margin-left: 0;
-    margin-right: 0px;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100px;
-}
-
-.nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 0;
-    border: 4px solid black;
-    max-width: 100%;
-    height: 100px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo-img {
-    width: 65px;
-    height: 65px;
-    max-width: 100%;
-}
-
-.logo-text {
-    font-size: 2rem;
-    width: 20%;
-}
-
-.search {
-    display:flex;
-    align-items:self-start;
-    background-color: white;
-    padding: 5px;
-    border-radius: 3px;
-    border: 2px solid black;
-    margin-right: 10px;
-    margin-left: 50px;
-    width: 45%;
-    max-width: 30%;
-}
-
-input[type="text"] {
-    flex: 1;
-    padding: 8px;
-    border: none;
-    background-color: transparent;
-}
-
-input[type="text"]:focus {
-    outline: none;
-}
-
-.search-icon {
-    margin-right: 10px;
-    width: 30px;
-    height: 30px;
-    max-width: 100%;
-}
-
-.nav-buttons a {
-    color: black;
-    text-decoration: none;
-    width: 50%;
-    justify-content: space-evenly;
-}
-
-.btn-login{
-    height: 20px;
-    margin-right: 35px;
-    justify-content: space-evenly;
-
-}
-
-.btn-user img{
-    width: 20px;
-    height: 20px;
-    margin-right: 35px;
-    justify-content: space-evenly;
-}
-
-.btn-settings img{
-    width: 20px;
-    height: 20px;
-    margin-right: 35px;
-    justify-content: space-evenly;
-}
-.btn-notify img {
-    width: 20px;
-    height: 20px;
-    margin-right: 35px;
-    justify-content: space-evenly;
-}
-
 .container1 {
     background-color: #fff;
     width: 400px;
@@ -128,7 +23,7 @@ input[type="text"]:focus {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: justify;
     float:right;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-right: 10px;
 }
 
@@ -201,7 +96,7 @@ h3 {
     margin-left: 20px;
     overflow-y: auto;
     height: 450px;
-    margin-top: 0;
+    margin-top: 100PX;
 }
 
 h1 {
@@ -258,7 +153,7 @@ h1 {
     overflow: hidden;
     transition: color 0.5s ease, border 0.5s ease;
     margin-left: 67rem;
-    margin-top: 15px;
+    margin-top: 100 px;
     width: 150px;
 }
 
