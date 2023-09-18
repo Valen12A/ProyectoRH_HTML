@@ -8,16 +8,35 @@
     <link rel="stylesheet" href="check in.html">
 </head>
 <body>
-    <section class="container">
-        <section class="from sign-in-container">
-            <h1>Iniciar Sesion</h1>
-            <from class="formulario2">
-                <input type="email" placeholder="Email o Nit" id="email">
-                <input type="password" placeholder="Contraseña" id="password">
-                <a href="check in.html" class="No-account">¿Aun no tienes una cuenta?</a>
-                <input type="submit" value="Iniciar Sesion">
-            </from>
-        </section>
-    </section>
+    <main class="container">
+        <form>
+            <h2>Login</h2>
+                <form action="procesar_login.php" method="post">
+                    <section class="form-group">
+                        <label for="username">Usuario:</label>
+                        <input type="text" id="username" name="username" required>
+                    </section>
+                    <section class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
+                        <a href="check in.html" class="No-account">¿Aun no tienes una cuenta?</a>
+                    </section>
+                    <section class="form-group">
+                        <label for="user_type">Tipo de usuario:</label>
+                        <label for="user">Usuario</label>
+                        <input type="radio" id="user" name="user_type" value="user" checked>
+                        <label for="company">Empresa</label>
+                        <input type="radio" id="company" name="user_type" value="company">
+                    </section>
+                    <a class="botom" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Ingresar
+                    </a>
+                </form>
+        </form>
+    </main>
 </body>
 </html>

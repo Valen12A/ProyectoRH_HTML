@@ -1,55 +1,155 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-.container{
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: #74B9FF;
-}
-
-.from{
+body {
+    font-family: Arial, sans-serif;
+    background-color:#007bff;
     text-align: center;
-    width:  300px;
-    padding: 1rem;
-    background-color: #95afc0;
 }
 
-h1{
-    margin-bottom: 1rem;
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#c8d6e5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 130px;
 }
 
-.from input{
-    display: block;
-    width: 100%;
-    padding: .5rem;
-    margin: auto;
+.form-group {
+    text-align: left;
     margin-bottom: 20px;
-    outline: none;
 }
 
-.from input[type="submit"]{
-    width: 100%;
-    padding: .5rem;
-    cursor: pointer;
-    background-color: rgb(32, 69, 181);
-    border: none;
-    color: #fff;
-}
-
-.from a{
+.form-group label {
     display: block;
-    margin: auto;
-    margin-bottom: 1rem;
-    width: 150px;
-    font-size: .7rem;
-    color: blue;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 390px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
     cursor: pointer;
-    text-decoration: underline;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.container form .botom {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #1e272e;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: -60px;
+    letter-spacing: 4px;
+    font-family: 'Gluten', cursive;
+}
+
+.container a:hover {
+    background: #0B63F6;
+    color: #0fbcf9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0B63F6,
+                0 0 25px #0B63F6,
+                0 0 50px #0B63F6,
+                0 0 100px #0B63F6;
+}
+
+.container a span {
+    position: absolute;
+    display: block;
+}
+
+.container a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #0B63F6);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+    left: -100%;
+    }
+    50%, 100% {
+    left: 100%;
+    }
+}
+
+.container a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #13E2DA);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+    top: -100%;
+    }
+    50%, 100% {
+    top: 100%;
+    }
+}
+
+.container a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #13E2DA);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+    right: -100%;
+    }
+    50%, 100% {
+    right: 100%;
+    }
+}
+
+.container a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #13E2DA);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+    bottom: -100%;
+    }
+    50%, 100% {
+    bottom: 100%;
+    }
 }
