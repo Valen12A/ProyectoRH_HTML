@@ -11,119 +11,16 @@ body {
     background-attachment: fixed;
     background-position: center top 75px;
     color: black;
-    margin: 0;
-    padding: 0;
     min-height: 100vh;
     background-size: 100% calc(100% - 60px);
 }
 
-.header1 {
-    background-color: #095bc4;
-    position:static;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    margin-left: 0;
-    margin-right: 0px;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100px;
+main {
+    margin-top: 120px;
 }
 
-.nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 0;
-    border: 4px solid black;
-    max-width: 100%;
-    height: 100px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo-img {
-    width: 65px;
-    height: 65px;
-    max-width: 100%;
-}
-
-.logo-text {
-    font-size: 2rem;
-    width: 20%;
-}
-
-.search {
-    display:flex;
-    align-items:self-start;
-    background-color: white;
-    padding: 5px;
-    border-radius: 3px;
-    border: 2px solid black;
-    margin-right: 10px;
-    margin-left: 50px;
-    width: 45%;
-    max-width: 30%;
-}
-
-input[type="text"] {
-    flex: 1;
-    padding: 8px;
-    border: none;
-    background-color: transparent;
-}
-
-input[type="text"]:focus {
-    outline: none;
-}
-
-.search-icon {
-    margin-right: 10px;
-    width: 30px;
-    height: 30px;
-    max-width: 100%;
-}
-
-.nav-buttons a {
-    color: black;
-    text-decoration: none;
-    width: 50%;
-    justify-content: space-evenly;
-}
-
-.btn-login{
-    height: 20px;
-    margin-right: 35px;
-    justify-content: space-evenly;
-
-}
-
-.btn-user img{
-    width: 20px;
-    height: 20px;
-    margin-right: 35px;
-    justify-content: space-evenly;
-}
-
-.btn-settings img{
-    width: 20px;
-    height: 20px;
-    margin-right: 35px;
-    justify-content: space-evenly;
-}
-.btn-notify img {
-    width: 20px;
-    height: 20px;
-    margin-right: 35px;
-    justify-content: space-evenly;
-}
 /* FOTO */
-
-.container{
+.container {
     width: 200px;
     height: 200px;
     background-color: rgba(255, 248, 248);
@@ -132,7 +29,7 @@ input[type="text"]:focus {
     border: black solid 3px;
 }
 
-.container input{
+.container input {
     display: block;
     width: 100px;
     padding: .1rem;
@@ -144,7 +41,7 @@ input[type="text"]:focus {
     align-items: center;
 }
 
-.input-1{
+.input-1 {
     background: #fff;
     margin-top: 50px;
     margin-left: 5px;
@@ -152,12 +49,12 @@ input[type="text"]:focus {
     width: 300px;
 }
 
-.container .input-1{
+.container .input-1 {
     background:#fff;
     font-family: Georgia;
 }
 
-.imagen img{
+.imagen img {
     width: 30px;
     height: 20px;
     margin-left: 250px;
@@ -165,7 +62,7 @@ input[type="text"]:focus {
     cursor: pointer;
 }
 
-.imagen2 img{
+.imagen2 img {
     width: 30px;
     height: 20px;
     margin-left: 250px;
@@ -173,7 +70,7 @@ input[type="text"]:focus {
     cursor: pointer;
 }
 
-.imagen3 img{
+.imagen3 img {
     width: 40px;
     height: 40px;
     margin-left: 250px;
@@ -181,13 +78,12 @@ input[type="text"]:focus {
     cursor: pointer;
 }
 
-.container-1{
+.container-1 {
     margin: 50px;
     margin-top: 70px;
 }
 
-
-.container-1 input{
+.container-1 input {
     width: 50px;
     height: 20px;
     margin-top: -10px;
@@ -195,12 +91,12 @@ input[type="text"]:focus {
     cursor: pointer;
 }
 
-.container-2{
+.container-2 {
     margin: 50px;
     margin-top: -20px;
 }
 
-.container-2 input{
+.container-2 input {
     width: 50px;
     height: 20px;
     margin-top: -5px;
@@ -208,13 +104,12 @@ input[type="text"]:focus {
     cursor: pointer;
 }
 
-
-.container-3{
+.container-3 {
     margin-left: 600px;
     margin-top: -190px;
 }
 
-.container-3 input{
+.container-3 input {
     width: 50px;
     height: 20px;
     margin-top: -5px;
@@ -222,23 +117,24 @@ input[type="text"]:focus {
     cursor: pointer;
 }
 
-.container-4{
+.container-4 {
     margin-left: 600px;
     margin-top: 40px;
 }
 
-.container-5{
+.container-5 {
     width: 300px;
-    height: 300px;
+    height: 350px;
     margin: 0px;
     border: black solid 2px;
     text-align: center;
     background: #fff;
     margin-left: 950px;
     margin-top: -350px;
+    padding: 15px;
 }
 
-.container-5 img{
+.container-5 img {
     width: 50px;
     margin-left: -250px;
 }
@@ -251,4 +147,3 @@ h5{
     margin-top: 30px;
     text-align: justify;
 }
-

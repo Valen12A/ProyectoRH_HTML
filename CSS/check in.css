@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color:#007bff;
+    background-color:#65B7E0;
     text-align: center;
 }
 
@@ -8,7 +8,7 @@ body {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color:#c8d6e5;
+    background-color:#ACD2E6;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-top: 90px;
@@ -28,7 +28,7 @@ body {
 .form-group input[type="text"],
 .form-group input[type="password"],
 .form-group input[type="email"] {
-    width: 390px;
+    width: 380px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -67,7 +67,7 @@ body {
 }
 
 .container a:hover {
-    background: #0B63F6;
+    background: #4E8EAD;
     color: #0fbcf9;
     border-radius: 5px;
     box-shadow: 0 0 5px #0B63F6,
