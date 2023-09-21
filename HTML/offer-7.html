@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/offers_complete7.css">
+    <link rel="stylesheet" href="../CSS/offer-7.css">
     <link rel="stylesheet" href="../CSS/bar_nav.css">
     <title>Postulación a Oferta</title>
 </head>
@@ -17,9 +17,26 @@
                 <img class="search-icon" src="/Imagenes/Search.png" alt="Busqueda">
             </form>
             <section class="nav-buttons">
-                <a href="" class="btn-login"><img src="/Imagenes/Usuario.png" alt="Usuario"></a>
-                <a href="#" class="btn-notify"><img src="/Imagenes/Campana.png" alt="Notify"></a>
-                <a href="" class="btn-settings"><img src="/Imagenes/Settings.png" alt="Settings"></a>
+                <a href="/HTML/login.html" class="btn-login"><img src="/Imagenes/Usuario.png" alt="Usuario"></a>
+                <div class="notify">
+                    <button class="btn-login notify-btn">
+                        <img src="/Imagenes/Campana.png" alt="Notify">
+                    </button>
+                    <div class="notify-text">
+                        ¡NO TIENES NOTIFICACIONES PENDIENTES!
+                    </div>
+                </div>
+                <div class="menu">
+                    <button class="btn-settings">
+                        <img src="/Imagenes/Settings.png" alt="Settings">
+                    </button>
+                    <div class="container-options">
+                        <a href="/HTML/basic-data.html">ACTUALIZAR HOJA DE VIDA</a>
+                        <a href="">ACTUALIZAR DATOS</a>
+                        <a href="">APLICACIONES</a>
+                        <a href="">ELIMINAR CUENTA</a>
+                    </div>
+                </div>
             </section>
         </nav>
     </header>
@@ -37,7 +54,7 @@
     </div>
     <main id="container2">
         <table class="offer-table">
-            <h1>RESUMEN DE LA OFERTA</h1>
+            <h1 class="resume">RESUMEN DE LA OFERTA</h1>
             <tr>
                 <th>Cargo</th>
                 <td>Analista de Seguridad de la Información.</td>
@@ -74,7 +91,6 @@
                 <th>Jornada de trabajo</th>
                 <td>Completa</td>
             </tr>
-            
             <tr>
                 <th>Horario</th>
                 <td>Lunes a viernes de 7am - 5pm</td>
@@ -83,7 +99,6 @@
         <h3 class="title">FUNCIONES</h3>
         <table>
             <tr>
-
                 <td class="funciones">Administrar la solución de infraestructura tecnológica de acuerdo con modelos de referencia y procedimientos técnicos.</td>
                 </tr>
             <tr>
@@ -95,10 +110,7 @@
             <tr>
                 <td class="funciones">Gestionar riesgos de soluciones de tecnologías de la información y las comunicaciones de acuerdo con metodologías y estándares.</td>
             </tr>
-
-        </tr>
-        
+        </table>
     </main>
-
 </body>
 </html>

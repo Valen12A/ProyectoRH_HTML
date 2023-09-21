@@ -7,7 +7,7 @@
     <title>Postulación a Oferta</title>
 </head>
 <body>
-    <link rel="stylesheet" href="../CSS/offers_complete4.css">
+    <link rel="stylesheet" href="../CSS/offer-4.css">
     <link rel="stylesheet" href="../CSS/bar_nav.css">
     <title>Postulación a Oferta</title>
 </head>
@@ -21,9 +21,26 @@
                 <img class="search-icon" src="/Imagenes/Search.png" alt="Busqueda">
             </form>
             <section class="nav-buttons">
-                <a href="" class="btn-login"><img src="/Imagenes/Usuario.png" alt="Usuario"></a>
-                <a href="#" class="btn-notify"><img src="/Imagenes/Campana.png" alt="Notify"></a>
-                <a href="" class="btn-settings"><img src="/Imagenes/Settings.png" alt="Settings"></a>
+                <a href="/HTML/login.html" class="btn-login"><img src="/Imagenes/Usuario.png" alt="Usuario"></a>
+                <div class="notify">
+                    <button class="btn-login notify-btn">
+                        <img src="/Imagenes/Campana.png" alt="Notify">
+                    </button>
+                    <div class="notify-text">
+                        ¡NO TIENES NOTIFICACIONES PENDIENTES!
+                    </div>
+                </div>
+                <div class="menu">
+                    <button class="btn-settings">
+                        <img src="/Imagenes/Settings.png" alt="Settings">
+                    </button>
+                    <div class="container-options">
+                        <a href="/HTML/basic-data.html">ACTUALIZAR HOJA DE VIDA</a>
+                        <a href="">ACTUALIZAR DATOS</a>
+                        <a href="">APLICACIONES</a>
+                        <a href="">ELIMINAR CUENTA</a>
+                    </div>
+                </div>
             </section>
         </nav>
     </header>
@@ -39,12 +56,9 @@
         <h4>Seleccionados: 1</h4>
         <button class="border-button"><a href="../HTML/postulation.html">¡Postularme!</a></button>
     </div>
-
-
     <main id="container2">
-
         <table class="offer-table">
-            <h1>RESUMEN DE LA OFERTA</h1>
+            <h1 class="resume">RESUMEN DE LA OFERTA</h1>
             <tr>
                 <th>Cargo</th>
                 <td>Gerente de Marketing Digital.</td>
@@ -71,7 +85,7 @@
             </tr>
             <tr>
                 <th>Candidatos para entrevistar</th>
-                <td>10/td>
+                <td>10 </td>
             </tr>
             <tr>
                 <th>Número Vacantes</th>
@@ -81,16 +95,14 @@
                 <th>Jornada de trabajo</th>
                 <td>Medio tiempo</td>
             </tr>
-            
             <tr>
                 <th>Horario</th>
                 <td>6:45 AM - 12:30 PM</td>
             </tr> 
         </table>
-        <h3 class="title">FUNCIONES</h3>
+        <h3 class="title-funtions">FUNCIONES</h3>
         <table>
             <tr>
-
                 <td class="funciones">Apoyar actividades de mercadeo, publicidad y comunicaciones en empresas industriales y comerciales de acuerdo con políticas y estrategias de las organizaciones.</td>
                 </tr>
             <tr>
@@ -102,10 +114,7 @@
             <tr>
                 <td class="funciones">Consolidar resultados de estudios y apoyar estrategias para el desarrollo de productos y/o mercado de acuerdo con políticas de la organización.</td>
             </tr>
-
-        </tr>
-        
+        </table>
     </main>
-
 </body>
 </html>

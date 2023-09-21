@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/offers_complete2.css">
+    <link rel="stylesheet" href="../CSS/offer-2.css">
     <link rel="stylesheet" href="../CSS/bar_nav.css">
     <title>Postulación a Oferta</title>
 </head>
@@ -17,9 +17,26 @@
                 <img class="search-icon" src="/Imagenes/Search.png" alt="Busqueda">
             </form>
             <section class="nav-buttons">
-                <a href="" class="btn-login"><img src="/Imagenes/Usuario.png" alt="Usuario"></a>
-                <a href="#" class="btn-notify"><img src="/Imagenes/Campana.png" alt="Notify"></a>
-                <a href="" class="btn-settings"><img src="/Imagenes/Settings.png" alt="Settings"></a>
+                <a href="/HTML/login.html" class="btn-login"><img src="/Imagenes/Usuario.png" alt="Usuario"></a>
+                <div class="notify">
+                    <button class="btn-login notify-btn">
+                        <img src="/Imagenes/Campana.png" alt="Notify">
+                    </button>
+                    <div class="notify-text">
+                        ¡NO TIENES NOTIFICACIONES PENDIENTES!
+                    </div>
+                </div>
+                <div class="menu">
+                    <button class="btn-settings">
+                        <img src="/Imagenes/Settings.png" alt="Settings">
+                    </button>
+                    <div class="container-options">
+                        <a href="/HTML/basic-data.html">ACTUALIZAR HOJA DE VIDA</a>
+                        <a href="">ACTUALIZAR DATOS</a>
+                        <a href="">APLICACIONES</a>
+                        <a href="">ELIMINAR CUENTA</a>
+                    </div>
+                </div>
             </section>
         </nav>
     </header>
@@ -35,12 +52,9 @@
         <h4>Seleccionados: 1</h4>
         <button class="border-button"><a href="../HTML/postulation.html">¡Postularme!</a></button>
     </div>
-
-
     <main id="container2">
-
         <table class="offer-table">
-            <h1>RESUMEN DE LA OFERTA</h1>
+            <h1 class="resume">RESUMEN DE LA OFERTA</h1>
             <tr>
                 <th>Cargo</th>
                 <td>Analista de datos</td>
@@ -83,10 +97,9 @@
                 <td>7 am a 12 am 2 pm a 6 pm</td>
             </tr> 
         </table>
-        <h3 class="title">FUNCIONES</h3>
+        <h3 class="title-funtions">FUNCIONES</h3>
         <table>
             <tr>
-
                 <td class="funciones">Sistematizar datos masivos de acuerdo con métodos de analítica y herramientas tecnológicas.</td>
                 </tr>
             <tr>
@@ -95,10 +108,7 @@
             <tr>
                 <td class="funciones">Manejo de las cuentas por cobrar a clientes, mantener al día los pagos de las facturas vencidas.</td>
             </tr>
-
-        </tr>
-        
+        </table>
     </main>
-
 </body>
 </html>

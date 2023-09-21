@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/offers_complete3.css">
+    <link rel="stylesheet" href="../CSS/offer-3.css">
     <link rel="stylesheet" href="../CSS/bar_nav.css">
     <title>Postulación a Oferta</title>
 </head>
@@ -17,9 +17,26 @@
                 <img class="search-icon" src="/Imagenes/Search.png" alt="Busqueda">
             </form>
             <section class="nav-buttons">
-                <a href="" class="btn-login"><img src="/Imagenes/Usuario.png" alt="Usuario"></a>
-                <a href="#" class="btn-notify"><img src="/Imagenes/Campana.png" alt="Notify"></a>
-                <a href="" class="btn-settings"><img src="/Imagenes/Settings.png" alt="Settings"></a>
+                <a href="/HTML/login.html" class="btn-login"><img src="/Imagenes/Usuario.png" alt="Usuario"></a>
+                <div class="notify">
+                    <button class="btn-login notify-btn">
+                        <img src="/Imagenes/Campana.png" alt="Notify">
+                    </button>
+                    <div class="notify-text">
+                        ¡NO TIENES NOTIFICACIONES PENDIENTES!
+                    </div>
+                </div>
+                <div class="menu">
+                    <button class="btn-settings">
+                        <img src="/Imagenes/Settings.png" alt="Settings">
+                    </button>
+                    <div class="container-options">
+                        <a href="/HTML/basic-data.html">ACTUALIZAR HOJA DE VIDA</a>
+                        <a href="">ACTUALIZAR DATOS</a>
+                        <a href="">APLICACIONES</a>
+                        <a href="">ELIMINAR CUENTA</a>
+                    </div>
+                </div>
             </section>
         </nav>
     </header>
@@ -35,12 +52,9 @@
         <h4>Seleccionados: 0</h4>
         <button class="border-button"><a href="../HTML/postulation.html">¡Postularme!</a></button>
     </div>
-
-
     <main id="container2">
-
         <table class="offer-table">
-            <h1>RESUMEN DE LA OFERTA</h1>
+            <h1 class="resume">RESUMEN DE LA OFERTA</h1>
             <tr>
                 <th>Cargo</th>
                 <td>Desarrollador Front-end</td>
@@ -77,7 +91,6 @@
                 <th>Jornada de trabajo</th>
                 <td>Completa</td>
             </tr>
-            
             <tr>
                 <th>Horario</th>
                 <td>Lunes a Viernes de 7:00AM a 05:00PM o de 08:00AM a 06:00PM</td>
@@ -86,7 +99,6 @@
         <h3 class="title">FUNCIONES</h3>
         <table>
             <tr>
-
                 <td class="funciones">Probar aplicaciones informáticas de acuerdo con parámetros técnicos y modelos de referencia.</td>
                 </tr>
             <tr>
@@ -98,10 +110,7 @@
             <tr>
                 <td class="funciones">Formular el proyecto multimedia de acuerdo con metodologías y documento de requisitos.</td>
             </tr>
-
-        </tr>
-        
+        </table>
     </main>
-
 </body>
 </html>

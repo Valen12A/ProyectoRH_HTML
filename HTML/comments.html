@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../CSS/comments.css">
 </head>
 <body>
-
     <header class="header">
         <nav class="nav">
             <img class="logo-img" src="/Imagenes/Logo.png" alt="logo">
@@ -18,30 +17,45 @@
                 <img class="search-icon" src="/Imagenes/Search.png" alt="Busqueda">
             </form>
             <section class="nav-buttons">
-                <a href="" class="btn-login"><img src="/Imagenes/Usuario.png" alt="Usuario"></a>
-                <a href="#" class="btn-notify"><img src="/Imagenes/Campana.png" alt="Notify"></a>
-                <a href="" class="btn-settings"><img src="/Imagenes/Settings.png" alt="Settings"></a>
+                <a href="/HTML/login.html" class="btn-login"><img src="/Imagenes/Usuario.png" alt="Usuario"></a>
+                <div class="notify">
+                    <button class="btn-login notify-btn">
+                        <img src="/Imagenes/Campana.png" alt="Notify">
+                    </button>
+                    <div class="notify-text">
+                        ¡NO TIENES NOTIFICACIONES PENDIENTES!
+                    </div>
+                </div>
+                <div class="menu">
+                    <button class="btn-settings">
+                        <img src="/Imagenes/Settings.png" alt="Settings">
+                    </button>
+                    <div class="container-options">
+                        <a href="/HTML/basic-data.html">ACTUALIZAR HOJA DE VIDA</a>
+                        <a href="">ACTUALIZAR DATOS</a>
+                        <a href="">APLICACIONES</a>
+                        <a href="">ELIMINAR CUENTA</a>
+                    </div>
+                </div>
             </section>
         </nav>
     </header>
-
-
     <div class="container">
-        <h2>Enviar Comentarios</h2>
+        <h2>COMENTARIO</h2>
         <form action="#" method="post">
             <div class="form-group">
-                <label for="nombre">Nombre:</label>
+                <label for="nombre">NOMBRE:</label>
                 <input type="text" id="nombre" name="nombre" required>
             </div>
             <div class="form-group">
-                <label for="correo">Correo Electrónico:</label>
+                <label for="correo">CORREO ELECTRONICO:</label>
                 <input type="text" id="correo" name="correo" required>
             </div>
             <div class="form-group">
-                <label for="comentario">Comentario:</label>
+                <label for="comentario">COMENTARIO: </label>
                 <textarea id="comentario" name="comentario" rows="4" required></textarea>
             </div>
-            <button type="submit">Enviar Comentario</button>
+            <button class="send" type="submit">ENVIAR</button>
         </form>
     </div>
 </body>
