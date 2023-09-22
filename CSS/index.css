@@ -11,7 +11,6 @@ body {
     background-attachment: fixed;
     background-position: center top 75px;
     color: black;
-
     background-size: 100% calc(100% - 60px);
 }
 

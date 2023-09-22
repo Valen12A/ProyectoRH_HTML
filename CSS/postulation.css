@@ -127,8 +127,3 @@ p {
     transform: translateX(-100%);
 }
 
-.no-style {
-    text-decoration: none;
-    color: inherit;
-    list-style: none;
-}

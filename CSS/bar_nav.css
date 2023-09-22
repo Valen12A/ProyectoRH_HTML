@@ -80,12 +80,8 @@ input[type="text"] {
 .nav-buttons {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-.notify {
-    position: relative;
-    margin-top: 20px;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .notify-btn {
@@ -147,6 +143,54 @@ input[type="text"] {
     background-color: #54acfe;
 }
 
+/* MENU DESPLEGABLE */
+.menu-button {
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 40%;
+}
+
+.menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {
+    background-color: #ddd;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu:hover .menu-content {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-button img{
+    width: 35px;
+    height: 35px;
+}
+
+.no-style {
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
+
+/* DISEÑO RESPONSIVE */
 @media (max-width: 768px) {
     .nav {
         flex-direction: column;
@@ -173,56 +217,4 @@ input[type="text"] {
     .nav-buttons a {
         margin: 0.5rem 0;
     }
-}
-
-
-
-
-/* Estilos para el menú desplegable */
-.menu {
-    position: relative;
-    display: inline-block;
-    float: right;        
-}
-
-.menu-button {
-    background-color: transparent;
-    color: #fff;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.menu-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    right: 100%; /* Posición a la izquierda del botón */
-}
-
-.menu-content a {
-    color: #333;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.menu-content a:hover {
-    background-color: #ddd;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Mostrar el menú al pasar el ratón sobre el botón */
-.menu:hover .menu-content {
-    display: block;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu-button img{
-    width: 35px;
-    height: 35px;
 }
