@@ -198,3 +198,9 @@ h3 {
 .volver:hover::after {
     transform: translateX(-100%);
 }
+
+.btn-volver {
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}

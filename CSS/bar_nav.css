@@ -211,11 +211,15 @@ input[type="text"] {
 
 .menu-content a:hover {
     background-color: #ddd;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Mostrar el menú al pasar el ratón sobre el botón */
 .menu:hover .menu-content {
     display: block;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-button img{
