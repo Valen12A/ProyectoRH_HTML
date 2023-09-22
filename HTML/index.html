@@ -6,7 +6,6 @@
     <title>HOME</title>
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="stylesheet" href="../CSS/bar_nav.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -26,27 +25,13 @@
                     <div class="notify-text">
                         ¡NO TIENES NOTIFICACIONES PENDIENTES!
                     </div>
-                </div>
-                <div class="menu">
-                    <button class="btn-settings">
-                        <img src="/Imagenes/Settings.png" alt="Settings">
-                    </button>
-                    <div class="container-options">
-                        <a href="../HTML/basic-data.html" target="_blank">ACTUALIZAR HOJA DE VIDA</a>
-                        <a href="">APLICACIONES</a>
-                        <a href="">ELIMINAR CUENTA</a>
-                        <script>
-                            $(document).ready(function() {
-                                $(".btn-settings").on("click", function() {
-                                    $(".container-options").toggleClass("active");
-                                });
-                                $(".container-options a").on("click", function() {
-                                    $(".container-options").removeClass("active");
-                                });
-                            });
-                        </script>
+                    <div class="menu">
+                        <div class="menu-button"><img src="../Imagenes/Settings.png" alt="settings"></div>
+                        <div class="menu-content">
+                            <a href="../HTML/basic-data.html">Actualizar</a>
+                            <a href="#">Cerrar secion</a>
+                        </div>
                     </div>
-                </div>
             </section>
         </nav>
     </header>
