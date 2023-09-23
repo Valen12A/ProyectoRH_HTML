@@ -1,149 +1,493 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.contenido{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1% 1%;
+    padding: 35px 0;
+    background-color: #fff;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #74B9FF;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center top 75px;
-    color: black;
-    min-height: 100vh;
-    background-size: 100% calc(100% - 60px);
+.contenido input{
+    padding: 20px 19px ;
+    background-color: #faf5f5;
+    border: 3px solid #000000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
 }
 
-main {
+.contenido input:focus{
+    border: 3px solid #292828;
+}
+
+.contenido input[type="file"]{
+    padding: 8px 4px;
+    width: 40%;
+    border-radius: 9px;
+    background: #fffdfd7c;
+}
+
+.contenido input[type="file"]::file-selector-button:hover {
+    background-color: #ced1f57c;
+}
+
+.contenido input::file-selector-button {
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+    background-color: whitesmoke;
+    padding: 0.5em;
+    border: thin solid #bbb5b5;
+    border-radius: 3px;
+}
+
+.contenido select{
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    padding: 10px 14px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    gap: 15px;
     margin-top: 120px;
 }
 
-/* FOTO */
-.container {
-    width: 200px;
-    height: 200px;
-    background-color: rgba(255, 248, 248);
-    margin-left: 20px;
-    margin-top: -195px;
-    border: black solid 3px;
-}
-
-.container input {
-    display: block;
-    width: 100px;
-    padding: .1rem;
-    margin: auto;
-    margin-bottom: 2px;
-    outline: none;
-    cursor: pointer;
-    margin-top: 45px;
+/*  */
+.tab_curriculum {
+    display: flex;
     align-items: center;
-}
+    width: 45%;
+    height: 55px;
+    background-color: #0097e6;
+    border-radius: 7px 90px 0 0;
+    padding: 1px 15px;
+    box-shadow: inset 0 0 10px #2d3436;
+}   
 
-.input-1 {
-    background: #fff;
-    margin-top: 50px;
-    margin-left: 5px;
-    height: 20px;
-    width: 300px;
-}
-
-.container .input-1 {
-    background:#fff;
-    font-family: Georgia;
-}
-
-.imagen img {
-    width: 30px;
-    height: 20px;
-    margin-left: 250px;
-    top: -200px;
+.btn_tab{
+    transition: all 0.6s ease;
+    width: 20%;
+    height: 85%;
+    padding: 2px 2px;
+    background-color: transparent;
+    transform: skew(20deg, 0deg);
+    color: #000000;
     cursor: pointer;
+    background-color: white;
+    border-left-color: rgb(162, 162, 162);
+    border-right-color: rgb(162, 162, 162);
+    border-top: 0;
+    border-bottom: 0;
 }
 
-.imagen2 img {
-    width: 30px;
-    height: 20px;
-    margin-left: 250px;
-    top: -250;
-    cursor: pointer;
+.btn_tab_1{
+    border-left: none;
+    border-radius: 7px 0 0 0;
 }
 
-.imagen3 img {
-    width: 40px;
-    height: 40px;
-    margin-left: 250px;
-    top: -250;
-    cursor: pointer;
+.btn_tab_2{
+    border-left: none;
+    border-right: none;
 }
 
-.container-1 {
-    margin: 50px;
-    margin-top: 70px;
+.btn_tab_3{
+    border-right: none;
 }
 
-.container-1 input {
-    width: 50px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: 420px;
-    cursor: pointer;
+.btn_tab_4{
+    border-right: none;
+    border-radius: 0 0 7px 0;
 }
 
-.container-2 {
-    margin: 50px;
-    margin-top: -20px;
+.btn_tab::after{
+    content: "";
+    position: absolute;
+    width: 100%;    
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #c9c9c9;
+    z-index: -1;    
+    opacity: 0;
+    transition: all 0.4s ease;
+    border: none;
 }
 
-.container-2 input {
-    width: 50px;
-    height: 20px;
-    margin-top: -5px;
-    margin-left: 420px;
-    cursor: pointer;
+.btn_tab:hover::after{
+    opacity: 1;
 }
 
-.container-3 {
-    margin-left: 600px;
-    margin-top: -190px;
+/*  */
+.container_general{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 1050px;
+    align-items: center;
+    overflow: hidden;
 }
 
-.container-3 input {
-    width: 50px;
-    height: 20px;
-    margin-top: -5px;
-    margin-left: 230px;
-    cursor: pointer;
+.container_general span{
+    font-size: 20.5px;
+    font-weight: 600;
 }
 
-.container-4 {
-    margin-left: 600px;
-    margin-top: 40px;
+.content{
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    background-color: #65B7E0;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(104, 103, 103, 0.5);
+}   
+    
+#contenido1{
+    transform: translateX(0%);
 }
 
-.container-5 {
-    width: 300px;
-    height: 350px;
-    margin: 0px;
-    border: black solid 2px;
-    text-align: center;
-    background: #fff;
-    margin-left: 950px;
-    margin-top: -350px;
+#contenido2 #contenido3 #contenido4{
+    transform: translateX(100%);
+}
+
+/*  */
+.content_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3% 4%;
+    border: 7px solid #4677e0;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.form1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.form2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.formulario label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 9%;
+}
+
+.labels input, select{
+    width: 90%;
+    height: 60%;
+}
+
+.label_select div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60%;
+    gap: 2%;
+}
+.label_select  div select{
+    width: 44%;
+    height: 100%;
+}
+
+/*  */
+.content_2{
+    display: flex;
+    align-items: flex-start;
+}
+
+.form3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 3% 4%;
+    gap: 50px;
+}
+
+.form3 div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.form3_content hr, span, select{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.labels2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.labels2_0{
+    display: flex;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+}
+
+.label_unico{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.label_unico input[type=file]{
+    width: 95%;
+    height: 100%;
+}
+
+.labels2_0 hr {
+    flex-grow: 1;
+    border-top: 1px solid #ccc;
+}
+
+.labels2_1{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.labels2_1 select{
+    width: 95%;
+    height: 100%;
+}
+
+.labels2_2{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.labels2_2 input[type=file]{
+    width: 75%;
+    height: 100%;
+}
+
+.select_unico{
+    width: 20%;
+}
+
+/*  */
+.content_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 3% 4%;
+    gap: 40px;
+}
+
+.content_3 article{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 10%;
+    gap: 5%;
+}
+
+.content_3 article select{
+    width: 25%;
+}
+
+.content_3 article hr {
+    flex-grow: 1;
+    border-top: 1px solid #ccc;
+}
+
+.form4{
+    display: grid;
+    height: 30%;
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.form4 label{
+    display: flex;
+    flex-direction: column;
     padding: 15px;
+    gap: 9px;
 }
 
-.container-5 img {
-    width: 50px;
-    margin-left: -250px;
+.form4 input{
+    height: 15%;
 }
 
-h5{
-    margin-top: -40px;
+.form4 input[type="file"]{
+    width: 100%;
+    height: 85%;
 }
 
-.p1{
-    margin-top: 30px;
-    text-align: justify;
+/*  */
+.content_4{
+    display: flex;
+    justify-content: flex-start;
+    padding: 3% 4%;
+}
+
+.form5{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    gap: 25px;
+}
+
+.form5 label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form5 select{
+    width: 40%;
+}
+
+.form5 input[type="file"]{
+    width: 75%;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .tab_curriculum{
+        width: 100%;
+        padding: 1px 10px;
+    }
+
+    .btn_tab{
+        width: 22%;
+        height: 90%;
+    }
+
+    .container_general span{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .container_general{
+        height: 1700px;
+    }
+
+    /*  */
+    .content_1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form1{
+        grid-row: none;
+        grid-column: none;
+        height: 900px;
+    }
+
+    .form2{
+        grid-row: none;
+        grid-column: none;
+        height: 780px;
+    }
+
+    .formulario{
+        justify-content: space-around;
+    }
+
+    .formulario label{
+        gap: 2px;
+        height: 9%; 
+    }
+    
+    .labels input, select{
+        width: 100%;
+    }
+    
+    .label_select  div select{
+        width: 100%;
+    }
+
+    /*  */
+    .form3 div{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .labels2_1 select{
+        width: 100%;
+    }
+    
+    .labels2_2{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    
+
+    /*  */
+    .form3{
+        width: 100%;
+    }
+
+    .form3 input[type="file"]{
+        width: 100%;
+    }
+
+    .content_3 article{
+        width: 100%;
+    }
+
+    .content_3 article select{
+        width: 35%;
+        height: 40%;
+    }
+
+    /*  */
+
+    .form4{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form4 label{
+        padding: 0;
+        gap: 10px;
+    }
+
+    .form5{
+        width: 100%;
+    }
+
+    .form5 select{
+        width: 100%;
+    }
+
+    .form5 input[type="file"]{
+        width: 100%;
+    }
+} 
+
+@media (min-width: 1300px) {
+  
 }

@@ -36,48 +36,297 @@
             </section>
         </nav>
     </header>
-    <main class="main">
-        <section class="imagen">
-            <img src="/Imagenes/editar.png" alt="editar">
-            <input class="input-1" type="number" placeholder="Nombre" id="name">
-        </section>
-        <section class="imagen2">
-            <img src="/Imagenes/telefono.png" alt="telefono">
-            <input class="input-1" type="number" placeholder="Telefono" id="telefono">
-        </section>
-        <section class="imagen3">
-            <img src="/Imagenes/correo.png" alt="Email">
-            <input class="input-1" type="email" placeholder="Email" id="email">
-        </section>
+
+    <main class="contenido">
         <section class="container">
-            <input type="submit" value="Subir Foto">
+            <article class="tab_curriculum">
+                <button id="btn1" onclick="openDatos()" class="btn_tab btn_tab_1">Datos Personales</button>
+                <button id="btn2" onclick="openEstudios()" class="btn_tab btn_tab_2">Estudios</button>
+                <button id="btn3" onclick="openExperiencia()" class="btn_tab btn_tab_3">Experiencia</button>
+                <button id="btn4" onclick="openIdiomas()" class="btn_tab btn_tab_4">Idiomas</button>
+            </article>
+            <article class="container_general">
+                <section id="contenido1" class="content content_1">
+                   <form class="formulario form1">
+                        <label class="labels" for="nombres">
+                            <span>Nombres</span>
+                            <input id="nombres" type="text" name="nombres"/>
+                        </label>
+                        <label class="labels" for="apellidos">
+                            <span>Apellidos</span>
+                            <input id="apellidos" type="text" name="apellidos"/>
+                        </label>
+                        <label class="labels" for="correo">
+                            <span>Correo</span>
+                            <input id="correo" type="email" name="correo"/>
+                        </label>
+                        <label class="labels" for="telefono">
+                            <span>Telefono</span>
+                            <input id="telefono" type="tel" name="telefono"/>
+                        </label>
+                        <label class="label_select">
+                            <span>Ubicacion</span>
+                            <section>
+                                <select name="departamento">
+                                    <option>Bogota D.C</option>
+                                    <option>Cundinamarca</option>
+                                </select>
+                                <select name="ciudad">
+                                    <option>Bogota D.C</option>
+                                    <option>Barranquilla</option>
+                                </select>
+                            </section>                            
+                        </label>
+                        <label class="labels" for="direccion">
+                            <span></span>
+                            <span>Direccion Residencia</span>
+                            <input id="direccion" type="text" name="direccion"/>
+                        </label>
+                        <label class="labels" for="tipo_sangre">
+                            <span>Tipo de Sangre</span>
+                            <select name="tipo_sangre">
+                                <option>AB+</option>
+                                <option>O+</option>
+                            </select>
+                        </label>
+                        <label class="labels">
+                            <span>Genero</span>
+                            <select>
+                                <option>Hombre</option>
+                                <option>Mujer</option>
+                            </select>
+                        </label>
+                    </form>
+                    <form class="formulario form2">
+                        <label>
+                            <span>Tipo Documento</span>
+                            <select>
+                                <option>Cedula de Ciudadania</option>
+                                <option>..</option>
+                            </select>
+                        </label>
+                        <label class="labels" for="nro_documento">
+                            <span>Numero Documento</span>   
+                            <input id="nro_documento" type="text" name="nro_documento"/>                           
+                        </label>
+                        <label class="labels" for="fecha_expidicion_documento">
+                            <span>Fecha Expedicion</span>
+                            <input id="fecha_expidicion_documento" type="date" name="fecha_expidicion_documento" >
+                        </label>
+                        <label class="labels" for="fecha_nacimiento">
+                            <span>Fecha Nacimiento</span>
+                            <input id="fecha_nacimiento" type="date" name="fecha_nacimiento" >
+                        </label>
+                        <label class="labels">
+                            <span>Estado Civil</span>
+                            <select>
+                                <option>Soltero</option>
+                                <option>..</option>
+                            </select>
+                        </label>
+                        <label class="labels">
+                            <span>Libreta Militar</span>
+                            <select>
+                                <option>Libreta de Primera</option>
+                                <option>Si</option>
+                                <option>En proceso</option>
+                                <option>No</option>
+                            </select>
+                        </label>
+                        <label class="labels">
+                            <span>Estrato</span>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </label>
+                   </form> 
+                </section>
+
+                <section id="contenido2" class="content content_2">
+                   <form class="form3">
+                        <section  class="form3_content">
+                            <label class="labels2_0">
+                                <hr><span>Bachiller</span>
+                                    <select class="select_unico">
+                                        <option>Si</option>
+                                        <option>No</option>
+                                    </select>
+                                </label>
+                            </label>
+                            <label class="labels2 label_unico">
+                                <span>Certificado</span>
+                                <input id="bachiller" type="file" name="bachiller">
+                            </label>
+                        </section>
+                        <section class="form3_content">
+                            <label class="labels2_0">                   
+                                <hr><span>Tecnologia</span>
+                                <select class="select_unico">
+                                    <option>Si</option>
+                                    <option>No</option>
+                                    <option>Tecnico</option>
+                                </select>
+                            </label>    
+                            <label class="labels2 labels2_1">
+                                <span>Cual Ocupacion:</span>
+                                <select>
+                                    <option>Programacion de Software</option>
+                                    <option>Desarrollo de Software</option>
+                                </select>
+                            </label>
+                            <label class="labels2 labels2_2">
+                                <span>Certificado:</span>
+                                <input id="tecnologia" type="file" name="tecnologia">
+                            </label>
+                        </section>
+                        <section class="form3_content">
+                            <label class="labels2_0">
+                                <hr><span>Titulo Profesional</span>
+                                <select class="select_unico">
+                                    <option>Si</option>
+                                    <option>No</option>
+                                </select>
+                            </label>
+                            </select>
+                            <label class="labels2 labels2_1">
+                                <span>Cual Ocupacion:</span>
+                                <select class="select_unico">
+                                    <option>Ingenieria de Sistemas</option>
+                                    <option>Ingenieria Industrial</option>
+                                </select>
+                            </label>
+                            <label class="labels2 labels2_2">
+                                <span>Certificado</span>
+                                <input id="titulo_profesional" type="file" name="titulo_profesional">
+                            </label>
+                        </section>
+                        <section class="form3_content">
+                            <label class="labels2_0">
+                                <hr><span>Maestria</span>
+                                <select class="select_unico">
+                                    <option>Si</option>
+                                    <option>No</option>
+                                </select>
+                            </label>
+                            <label class="labels2 labels2_1">
+                                <span>Cual Ocupacion:</span>
+                                <select>
+                                    <option>Ingenieria de Sistemas</option>
+                                    <option>Ingenieria Industrial</option>
+                                </select>
+                            </label>
+                            <label class="labels2 labels2_2">
+                                <span>Certificado</span>
+                                <input id="maestria" type="file" name="maestria">
+                            </label>    
+                        </label>
+                    </section>
+                   </form> 
+                </section>
+
+                <section id="contenido3" class="content content_3">
+                    <article>
+                        <hr>
+                        <select>
+                            <option>Trabajo Formal</option>
+                            <option>Trabajo Informal</option>
+                        </select>
+                    </article>
+                   <form class="form4">
+                        <label for="nombre_empresa">
+                            <span>Nombre Empresa</span>
+                            <input id="nombre_empresa" type="text" name="nombre_empresa">
+                        </label>
+                        <label for="fecha_inicio">
+                            <span>Fecha inicio</span>
+                            <input id="fecha_inicio" type="date" name="fecha_inicio">
+                        </label>
+                        <label for="fecha_fin">
+                            <span>Fecha Fin</span>
+                            <input id="fecha_fin" type="date" name="fecha_fin">
+                        </label>
+                        <label for="telefono_empresa">
+                            <span>Telefono Empresa</span>
+                            <input id="telefono_empresa" type="tel" name="telefono_empresa">
+                        </label>
+                        <label for="certificado">
+                            <span>Certificado</span>
+                            <input id="certificado" type="file" name="certificado">
+                        </label>
+                   </form> 
+                </section>
+
+                <section id="contenido4" class="content content_4">
+                   <form class="form5">
+                        <label for="tipo_idioma">
+                            <span>Agregar Idioma</span>
+                            <select>
+                                <option>Ingles</option>
+                                <option>Portugues</option>
+                                <option>Frances</option>
+                                <option>Ingles Britanico</option>
+                                <option>Otro</option>
+                            </select>
+                        </label>
+                        <label for="nivel_idioma">
+                            <span>Nivel Idioma</span>
+                            <select>
+                                <option>A1</option>
+                                <option>A2</option>
+                                <option>B1</option>
+                                <option>B1</option>
+                                <option>C1</option>
+                                <option>C2</option>
+                            </select>
+                        </label>
+                        <label for="certificado_idioma">
+                            <span>Certificado</span>
+                            <input id="certificado_idioma" type="file" name="certificado_idioma">
+                        </label>
+                   </form>
+                   </section> 
+                </section>
+            </article>
         </section>
     </main>
-    <main class="container-1">
-        <section>
-            <h1>Experiencia</h1>
-            <input type="submit" value="Subir">
-            <p>Sube aqui todo lo relacionado con tu Experiencia laboral</p>
-        </section>
-    </main>
-    <main class="container-2">
-        <h2>Conocimiento y Habilidades</h2>
-        <input type="submit" value="Subir">
-        <p></p>
-    </main>
-    <main class="container-3">
-        <h3>¿Que Trabajo Buscas?</h3>
-        <input type="submit" value="Buscar">
-        <p>Escogue tu area de trabajo</p>
-    </main>
-    <main class="container-4">
-        <h4>Archivos Adjuntos</h4>
-        <input type="submit" value="Subir o Modificar Archivos">
-    </main>
-    <main class="container-5">
-        <img src="/Imagenes/bombilla.png" alt="">
-        <h5>Como Mejorar Tu Hoja de Vida</h5>
-        <p class="p1">Para mejorar tu hoja de vida, asegúrate de tener un formato profesional y limpio, con información clara y concisa. Destaca tus logros y responsabilidades en trabajos anteriores, resalta tus habilidades relevantes y personaliza tu hoja de vida para cada puesto al que apliques. Mantén tus datos de contacto actualizados y revisa y corrige errores. Finalmente, mantén tu hoja de vida actualizada a medida que adquieras nuevas experiencias o habilidades.</p>
-    </main>
+
+    <script>
+        var contenido1 = document.getElementById("contenido1");
+        var contenido2 = document.getElementById("contenido2");
+        var contenido3 = document.getElementById("contenido3");
+        var contenido4 = document.getElementById("contenido4");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
+
+            function openDatos(){
+                contenido1.style.transform = "translateX(0%)";
+                contenido2.style.transform = "translateX(100%)";
+                contenido3.style.transform = "translateX(100%)";
+                contenido4.style.transform = "translateX(100%)";
+            }
+            
+            function openEstudios(){
+                contenido1.style.transform = "translateX(100%)";
+                contenido2.style.transform = "translateX(0%)";
+                contenido3.style.transform = "translateX(100%)";
+                contenido4.style.transform = "translateX(100%)";
+            }
+            function openExperiencia(){
+                contenido1.style.transform = "translateX(100%)";
+                contenido2.style.transform = "translateX(100%)";
+                contenido3.style.transform = "translateX(0%)";
+                contenido4.style.transform = "translateX(100%)";
+            }
+            function openIdiomas(){
+                contenido1.style.transform = "translateX(100%)";
+                contenido2.style.transform = "translateX(100%)";
+                contenido3.style.transform = "translateX(100%)";
+                contenido4.style.transform = "translateX(0%)";
+            }
+    </script>
 </body>
 </html>
